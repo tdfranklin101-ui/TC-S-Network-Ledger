@@ -1,22 +1,28 @@
-# TC-S-Network-Ledger
+# TC-S Network Ledger
 
-Reference ledger and archive management
+Comprehensive transaction and energy ledger system.
 
-## Part of TC-S Network Platform
+## Features
 
-This repository is part of the TC-S Network 14-repository microservices architecture. All services connect to a shared Supabase database and work together as a cohesive platform.
+- Transaction tracking
+- Solar clock monitoring
+- Audit trail management
+- Energy ledger queries
 
 ## Setup
 
 ```bash
 npm install
+cp .env.example .env
 npm run dev
 ```
 
-## Documentation
+## API Endpoints
 
-See the main [TC-S Network documentation](https://github.com/tdfranklin101-ui/TC-S-Network-Shared) for complete setup instructions.
+- `GET /api/ledger/transactions` - List transactions
+- `GET /api/ledger/solar-clock` - Get solar clock data
+- `GET /api/ledger/audit` - Get audit entries
 
 ## License
 
-MIT © TC-S Network Foundation
+MIT - TC-S Network Foundation
